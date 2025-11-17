@@ -1,0 +1,66 @@
+base_url = "https://example.com"
+title = "Σ.Γ.7ΝΗΠ"
+default_language = "el"
+theme = "linkita"
+
+compile_sass = true
+minify_html = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+[[taxonomies]]
+name = "categories"
+feed = true
+paginate_by = 4
+
+[[taxonomies]]
+name = "tags"
+feed = true
+paginate_by = 4
+
+[[taxonomies]]
+name = "authors"
+feed = true
+paginate_by = 4
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+[extra]
+# Author info
+author = "Το Όνομά σας"
+avatar = "/images/avatar.jpg"  # Optional
+
+# Social links
+email = "sg7nip@gmail.com"
+github = "sg7nip"
+
+# Navigation menu
+menu = [
+    { name = "Αρχική", url = "/", weight = 1 },
+    { name = "Αρχείο Ανακοινώσεων", url = "/archive", weight = 2 },
+    { name = "Ετικέτες", url = "/tags", weight = 3 },
+    { name = "Για τον Σύλλογο", url = "/about/sg7nip", weight = 4 },
+]
+
+# Homepage settings
+show_recent_posts = true
+recent_posts_number = 5
+
+# Footer
+footer_text = "Σ.Γ.7ΝΗΠ"
+
+# Date format (Greek)
+date_format = "%d %B %Y"
+
+header_buttons = ["site_title", "theme_button", "search_button", "home_button"]
+
+toc = false
+
+[extra.taxonomy_sorting]
+# "ascending_frequency", "descending_frequency" or "name"
+# Default value: "descending_frequency"
+categories = "name"
+tags = "descending_frequency"
+authors = "name"
