@@ -38,10 +38,10 @@ github = "sg7nip"
 
 # Navigation menu
 menu = [
-    { name = "Αρχική", url = "/", weight = 1 },
-    { name = "Αρχείο Ανακοινώσεων", url = "/archive", weight = 2 },
-    { name = "Ετικέτες", url = "/tags", weight = 3 },
-    { name = "Για τον Σύλλογο", url = "/about/sg7nip", weight = 4 },
+    { name = "Αρχική", url = "$BASE_URL/", weight = 1 },
+    { name = "Αρχείο Ανακοινώσεων", url = "$BASE_URL/archive", weight = 2 },
+    { name = "Ετικέτες", url = "$BASE_URL/tags", weight = 3 },
+    { name = "Για τον Σύλλογο", url = "$BASE_URL/about/sg7nip", weight = 4 },
 ]
 
 # Homepage settings
